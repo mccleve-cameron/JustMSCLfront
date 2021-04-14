@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.logo-bottom {
+  margin-top: -30px;
+  margin-bottom: 20px;
+}
+
+#sign-up {
+  padding: 30px;
+}
+
+input {
+  display: block;
+  margin: 10px;
+  width: 250px;
+}
+
+h3 {
+  font-size: 50pt;
+}

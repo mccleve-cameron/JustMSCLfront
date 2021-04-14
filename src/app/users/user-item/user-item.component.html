@@ -1,0 +1,20 @@
+<div class="account-info">
+  <div class="row">
+    <a
+      [routerLink]="contact._id"
+      routerLinkActive="active"
+      class="list-group-item clearfix documentDiv"
+    >
+      <fa-icon [icon]="faUserEdit"></fa-icon>
+    </a>
+    <a (click)="onDelete()" class="list-group-item clearfix documentDiv">
+      <fa-icon [icon]="faTrash"></fa-icon>
+    </a>
+  </div>
+  <div>
+    <p><b>ID:</b> {{ contact._id }}</p>
+    <p><b>Email:</b> {{ contact.email }}</p>
+    <p><b>Hashed Password:</b> {{ contact.password }}</p>
+  </div>
+</div>
+<hr />

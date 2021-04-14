@@ -1,0 +1,31 @@
+<div class="container" style="display: flex">
+  <div class="box panel panel-default">
+    <form id="sign-up" (ngSubmit)="onSubmit(f)" #f="ngForm">
+      <h3>JUST</h3>
+      <h3 class="logo-bottom">MSCL</h3>
+
+      <input
+        ngModel
+        type="text"
+        name="email"
+        id="email"
+        placeholder="Email"
+        email
+        required
+      />
+      <input
+        ngModel
+        type="text"
+        name="password"
+        id="password"
+        placeholder="Password"
+        type="password"
+        required
+      />
+      <button class="btn btn-primary btn-block" type="submit">Sign In</button>
+      <div class="links">
+        <a routerLink="/signup">Dont have an account? Sign up!</a>
+      </div>
+    </form>
+  </div>
+</div>

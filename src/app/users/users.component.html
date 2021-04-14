@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="row">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="title">Accounts</h3>
+            <fa-icon [icon]="faUserCircle"></fa-icon>
+          </div>
+
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-xs-12 margin-top">
+                <app-user-item
+                  id="user._id"
+                  *ngFor="let user of users"
+                  [contact]="user"
+                >
+                </app-user-item>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
